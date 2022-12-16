@@ -15,6 +15,11 @@ export class MainPageComponent implements OnInit {
 
   userList: string[] = ["A1", "A2", "A3"];
 
+  number1: number;
+  number2: number;
+  number3: number;
+  result: number;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -31,14 +36,18 @@ export class MainPageComponent implements OnInit {
     this.userList.pop();
   }
 
-  btnSwicth(){
-    if(this._show){
+  btnSwicth() {
+    if (this._show) {
       this._show = false;
       this.titleHide = "แสดง";
-    }else{
+    } else {
       this._show = true;
       this.titleHide = "ซ่อน";
     }
+  }
+
+  btnSum() {
+    this.result = this.number1 * this.number2 * this.number3;
   }
 
 }

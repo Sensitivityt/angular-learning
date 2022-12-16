@@ -19,4 +19,13 @@
   <span>{{user}}</span>
 </li>
 
+<!-- ผลการคูณ -->
+<div>
+  <label for="number1">กรุณากรอกตัวเลข</label>
+  <input id="number1" [(ngModel)]="number1" placeholder="number1">
+  <input id="number2" [(ngModel)]="number2" placeholder="number2">
+  <input id="number3" [(ngModel)]="number3" placeholder="number3">
+  <button label="submit" (click)="btnSum()">ยืนยัน</button>
+  <h1>{{result}}</h1>
+</div>
 
