@@ -1,0 +1,14 @@
+<div class="title">{{title}}</div>
+<div class="description">{{description}}</div>
+
+
+<div>
+  <label for="name">ชื่อฮีโร่: </label>
+  <input id="name" [(ngModel)]="hero" placeholder="ชื่อ">
+  <button label="submit" (click)="btnclick()">ยืนยัน</button>
+</div>
+
+
+
+<button label="show/hide" (click)="btnSwicth()">{{titleHide}}</button>
+<div *ngIf="_show">Content to render when condition is true.</div>
