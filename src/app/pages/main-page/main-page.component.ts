@@ -13,6 +13,8 @@ export class MainPageComponent implements OnInit {
   titleHide: string = "ซ่อน";
   _show: boolean = true;
 
+  userList: string[] = ["A1", "A2", "A3"];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -22,7 +24,11 @@ export class MainPageComponent implements OnInit {
   }
 
   btnclick() {
-    console.log(this.hero);
+    this.userList.push(this.hero);
+  }
+
+  btnDel() {
+    this.userList.pop();
   }
 
   btnSwicth(){

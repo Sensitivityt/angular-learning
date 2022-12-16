@@ -12,3 +12,11 @@
 
 <button label="show/hide" (click)="btnSwicth()">{{titleHide}}</button>
 <div *ngIf="_show">Content to render when condition is true.</div>
+
+
+<button label="submit" (click)="btnDel()">ลบ</button>
+<li *ngFor="let user of userList">
+  <span>{{user}}</span>
+</li>
+
+
